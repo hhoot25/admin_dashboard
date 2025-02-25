@@ -4,7 +4,7 @@
 
 body{
     display:grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
     height:100vh;
     font-family:"Roboto";
@@ -41,11 +41,72 @@ body{
 
 #header{
     display:grid;
+    grid-template-columns:6fr 4fr;
+    grid-template-rows:1fr 1fr;
     background-color:white;
     grid-row:1/2;
     grid-column:2/3;
 
 }
+
+.search{
+    background-color:rgb(40, 173, 213);
+    
+
+}
+
+#header > * {
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    grid-auto-flow:column;
+    
+}
+
+.searchbar{
+    border:none;
+    background-color:rgb(238, 235, 235);
+    border-radius:30px;
+    width:100%;
+    height:30px;
+    
+}
+
+
+.notification{
+    
+} 
+
+.welcome{
+
+}
+
+.welcome-text{
+    display:grid;
+    gap:10px;
+}
+.big{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.share{
+    grid-template-columns:repeat(3,1fr);
+    background-color: red;
+}
+.share > *{
+    background-color:rgb(40, 173, 213);
+    border-radius:40px;
+    display:grid;
+    justify-content:center;
+    padding:20px;
+    margin:10px;
+    color:white;
+}
+
+
+
+
 
 #main-content{
     background-color:grey;
